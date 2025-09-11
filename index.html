@@ -11,7 +11,8 @@
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
-            color: #333;
+            color: rgb(59, 52, 47); /* inkDark */
+            background-color: rgb(247, 236, 224); /* templePaper */
         }
         .language-selector {
             position: fixed;
@@ -20,7 +21,7 @@
             z-index: 1000;
         }
         .language-btn {
-            background: #667eea;
+            background: rgb(232, 145, 142); /* lotusPink */
             color: white;
             border: none;
             padding: 8px 12px;
@@ -28,49 +29,139 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 14px;
+            transition: all 0.3s ease;
         }
         .language-btn.active {
-            background: #764ba2;
+            background: rgb(93, 64, 55); /* woodDark */
         }
         .language-btn:hover {
-            background: #5a67d8;
+            background: rgb(141, 110, 99); /* woodMedium */
         }
         .header {
             text-align: center;
             margin-bottom: 40px;
-            padding: 30px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 0;
+            background: linear-gradient(135deg, rgb(174, 198, 207) 0%, rgb(195, 182, 217) 100%); /* blueSerene to lavender */
             color: white;
-            border-radius: 10px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(59, 52, 47, 0.1);
+        }
+        .buddha-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            box-shadow: 0 4px 16px rgba(232, 145, 142, 0.3);
         }
         .section {
-            background: #f8f9fa;
+            background: rgb(248, 248, 246); /* softWhite */
             padding: 25px;
             margin: 20px 0;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
+            border-radius: 12px;
+            border-left: 4px solid rgb(232, 145, 142); /* lotusPink */
+            box-shadow: 0 4px 16px rgba(93, 64, 55, 0.1);
         }
         .contact-info {
-            background: #e3f2fd;
-            padding: 20px;
-            border-radius: 8px;
+            background: linear-gradient(135deg, rgb(174, 200, 163) 0%, rgb(245, 204, 176) 100%); /* greenSage to peach */
+            padding: 25px;
+            border-radius: 12px;
             margin: 20px 0;
+            box-shadow: 0 4px 16px rgba(93, 64, 55, 0.1);
+        }
+        .contact-info h2 {
+            color: rgb(80, 130, 70); /* greenSageText */
+        }
+        .contact-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .contact-btn {
+            background: rgb(232, 145, 142); /* lotusPink */
+            color: white !important;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none !important;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(232, 145, 142, 0.3);
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        .contact-btn:hover {
+            background: rgb(93, 64, 55); /* woodDark */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(93, 64, 55, 0.4);
         }
         .faq-item {
             margin-bottom: 20px;
-            padding: 15px;
-            background: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            background: rgb(248, 248, 246); /* softWhite */
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(93, 64, 55, 0.08);
+            border: 1px solid rgb(209, 209, 203); /* stone200 */
         }
         .faq-question {
             font-weight: bold;
-            color: #667eea;
+            color: rgb(93, 64, 55); /* woodDark */
             margin-bottom: 10px;
         }
-        a { color: #667eea; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        .faq-item div:last-child {
+            color: rgb(115, 115, 112); /* stone600 */
+        }
+        h2 {
+            color: rgb(93, 64, 55); /* woodDark */
+            border-bottom: 2px solid rgb(232, 145, 142); /* lotusPink */
+            padding-bottom: 8px;
+        }
+        a { 
+            color: rgb(232, 145, 142); /* lotusPink */
+            text-decoration: none; 
+            transition: color 0.3s ease;
+        }
+        a:hover { 
+            color: rgb(93, 64, 55); /* woodDark */
+            text-decoration: underline; 
+        }
         .hidden { display: none; }
+        ul li {
+            margin-bottom: 8px;
+            color: rgb(115, 115, 112); /* stone600 */
+        }
+        ul li strong {
+            color: rgb(93, 64, 55); /* woodDark */
+        }
+        footer {
+            background: rgb(174, 198, 207); /* blueSerene */
+            color: white;
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(93, 64, 55, 0.1);
+        }
+        
+        /* 모바일 반응형 */
+        @media (max-width: 480px) {
+            .contact-header {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .contact-btn {
+                text-align: center;
+            }
+            .language-selector {
+                top: 10px;
+                right: 10px;
+            }
+            .language-btn {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -83,7 +174,9 @@
     <!-- 한국어 콘텐츠 -->
     <div id="content-ko">
         <div class="header">
-            <h1>🧘‍♀️ Buddha AI</h1>
+            <img src="https://pfst.cf2.poecdn.net/base/image/2a0bd17f2b3f945e172b934bf4ebaf1df2014afadcca920695324e15b9086418?w=1024&h=1024" 
+                 alt="Buddha AI Logo" class="buddha-logo">
+            <h1>Buddha AI</h1>
             <p>명상과 마음챙김을 위한 AI 앱</p>
         </div>
 
@@ -93,7 +186,11 @@
         </div>
 
         <div class="contact-info">
-            <h2>📧 문의사항</h2>
+            <div class="contact-header">
+                <h2>📧 문의사항</h2>
+                <a href="mailto:johyowon99@gmail.com?subject=Buddha AI 문의사항&body=안녕하세요,%0D%0A%0D%0ABuddha AI 앱에 대해 문의드립니다.%0D%0A%0D%0A문의내용:%0D%0A" 
+                   class="contact-btn">📧 문의하기</a>
+            </div>
             <p><strong>이메일:</strong> johyowon99@gmail.com</p>
             <p><strong>응답 시간:</strong> 영업일 기준 24-48시간 이내</p>
             <p><strong>개발자:</strong> 조효원</p>
@@ -136,10 +233,10 @@
             <h2>📝 피드백</h2>
             <p>Buddha AI를 더욱 발전시키기 위해 사용자 여러분의 소중한 의견을 기다리고 있습니다. 
             기능 제안, 버그 신고, 개선사항 등 모든 피드백을 환영합니다.</p>
-            <p><a href="mailto:johyowon99@gmail.com">이메일로 피드백 보내기</a></p>
+            <p><a href="mailto:johyowon99@gmail.com?subject=Buddha AI 피드백&body=안녕하세요,%0D%0A%0D%0ABuddha AI 앱에 대한 피드백을 보내드립니다.%0D%0A%0D%0A피드백 내용:%0D%0A">이메일로 피드백 보내기</a></p>
         </div>
 
-        <footer style="text-align: center; margin-top: 40px; padding: 20px; color: #666;">
+        <footer>
             <p>&copy; 2025 johyowon. All rights reserved.</p>
             <p>Buddha AI - 평온한 마음을 위한 여정</p>
         </footer>
@@ -148,7 +245,9 @@
     <!-- 영어 콘텐츠 -->
     <div id="content-en" class="hidden">
         <div class="header">
-            <h1>🧘‍♀️ Buddha AI</h1>
+            <img src="https://pfst.cf2.poecdn.net/base/image/2a0bd17f2b3f945e172b934bf4ebaf1df2014afadcca920695324e15b9086418?w=1024&h=1024" 
+                 alt="Buddha AI Logo" class="buddha-logo">
+            <h1>Buddha AI</h1>
             <p>AI-powered Meditation & Mindfulness App</p>
         </div>
 
@@ -158,7 +257,11 @@
         </div>
 
         <div class="contact-info">
-            <h2>📧 Contact</h2>
+            <div class="contact-header">
+                <h2>📧 Contact</h2>
+                <a href="mailto:johyowon99@gmail.com?subject=Buddha AI Inquiry&body=Hello,%0D%0A%0D%0AI have an inquiry about the Buddha AI app.%0D%0A%0D%0AInquiry:%0D%0A" 
+                   class="contact-btn">📧 Contact Us</a>
+            </div>
             <p><strong>Email:</strong> johyowon99@gmail.com</p>
             <p><strong>Response Time:</strong> Within 24-48 hours on business days</p>
             <p><strong>Developer:</strong> johyowon</p>
@@ -201,10 +304,10 @@
             <h2>📝 Feedback</h2>
             <p>We welcome your valuable feedback to improve Buddha AI. 
             Please share your feature suggestions, bug reports, and improvement ideas with us.</p>
-            <p><a href="mailto:johyowon99@gmail.com">Send feedback via email</a></p>
+            <p><a href="mailto:johyowon99@gmail.com?subject=Buddha AI Feedback&body=Hello,%0D%0A%0D%0AI would like to provide feedback about the Buddha AI app.%0D%0A%0D%0AFeedback:%0D%0A">Send feedback via email</a></p>
         </div>
 
-        <footer style="text-align: center; margin-top: 40px; padding: 20px; color: #666;">
+        <footer>
             <p>&copy; 2025 johyowon. All rights reserved.</p>
             <p>Buddha AI - Your Journey to Inner Peace</p>
         </footer>
