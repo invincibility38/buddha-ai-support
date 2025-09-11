@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddha AI 지원</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .language-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .language-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            margin: 0 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .language-btn.active {
+            background: #764ba2;
+        }
+        .language-btn:hover {
+            background: #5a67d8;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+        }
+        .section {
+            background: #f8f9fa;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .contact-info {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <!-- 언어 선택 버튼 -->
+    <div class="language-selector">
+        <button class="language-btn active" onclick="setLanguage('ko')">한국어</button>
+        <button class="language-btn" onclick="setLanguage('en')">English</button>
+    </div>
+
+    <!-- 한국어 콘텐츠 -->
+    <div id="content-ko">
+        <div class="header">
+            <h1>🧘‍♀️ Buddha AI</h1>
+            <p>명상과 마음챙김을 위한 AI 앱</p>
+        </div>
+
+        <div class="section">
+            <h2>📱 앱 소개</h2>
+            <p>Buddha AI는 개인 맞춤형 명상 가이드를 제공하는 iOS 앱입니다. AI 기술을 활용하여 사용자의 감정 상태와 상황에 맞는 명상 콘텐츠를 추천합니다.</p>
+        </div>
+
+        <div class="contact-info">
+            <h2>📧 문의사항</h2>
+            <p><strong>이메일:</strong> johyowon99@gmail.com</p>
+            <p><strong>응답 시간:</strong> 영업일 기준 24-48시간 이내</p>
+            <p><strong>개발자:</strong> 조효원</p>
+        </div>
+
+        <div class="section">
+            <h2>❓ 자주 묻는 질문</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q. 구독을 취소하려면 어떻게 해야 하나요?</div>
+                <div>A. iOS 설정 → Apple ID → 구독 → Buddha AI → 구독 취소를 선택하세요.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. 무료로 사용할 수 있나요?</div>
+                <div>A. 첫 대화로부터 10회까지 무료로 이용하실 수 있습니다.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. 오프라인에서도 사용할 수 있나요?</div>
+                <div>A. 다운로드된 명상 콘텐츠는 오프라인에서도 이용 가능합니다.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. 데이터가 안전하게 보호되나요?</div>
+                <div>A. 모든 사용자 데이터는 Firebase 보안 시스템을 통해 암호화되어 보호됩니다.</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🛠 기술적 문제</h2>
+            <ul>
+                <li><strong>앱이 실행되지 않음:</strong> 앱을 완전히 종료 후 재실행해보세요</li>
+                <li><strong>로그인 문제:</strong> 네트워크 연결을 확인하고 다시 시도해보세요</li>
+                <li><strong>구독 복원:</strong> 설정 → 구독 복원 버튼을 눌러주세요</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📝 피드백</h2>
+            <p>Buddha AI를 더욱 발전시키기 위해 사용자 여러분의 소중한 의견을 기다리고 있습니다. 
+            기능 제안, 버그 신고, 개선사항 등 모든 피드백을 환영합니다.</p>
+            <p><a href="mailto:johyowon99@gmail.com">이메일로 피드백 보내기</a></p>
+        </div>
+
+        <footer style="text-align: center; margin-top: 40px; padding: 20px; color: #666;">
+            <p>&copy; 2025 johyowon. All rights reserved.</p>
+            <p>Buddha AI - 평온한 마음을 위한 여정</p>
+        </footer>
+    </div>
+
+    <!-- 영어 콘텐츠 -->
+    <div id="content-en" class="hidden">
+        <div class="header">
+            <h1>🧘‍♀️ Buddha AI</h1>
+            <p>AI-powered Meditation & Mindfulness App</p>
+        </div>
+
+        <div class="section">
+            <h2>📱 About the App</h2>
+            <p>Buddha AI is an iOS app that provides personalized meditation guidance. Using AI technology, it recommends meditation content tailored to your emotional state and circumstances.</p>
+        </div>
+
+        <div class="contact-info">
+            <h2>📧 Contact</h2>
+            <p><strong>Email:</strong> johyowon99@gmail.com</p>
+            <p><strong>Response Time:</strong> Within 24-48 hours on business days</p>
+            <p><strong>Developer:</strong> johyowon</p>
+        </div>
+
+        <div class="section">
+            <h2>❓ Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q. How can I cancel my subscription?</div>
+                <div>A. Go to iOS Settings → Apple ID → Subscriptions → Buddha AI → Cancel Subscription.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. Can I use it for free?</div>
+                <div>A. You can use up to 10 conversations for free from your first interaction.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. Can I use it offline?</div>
+                <div>A. Downloaded meditation content is available for offline use.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. Is my data protected securely?</div>
+                <div>A. All user data is encrypted and protected through Firebase security systems.</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🛠 Technical Issues</h2>
+            <ul>
+                <li><strong>App won't start:</strong> Force close the app and restart</li>
+                <li><strong>Login issues:</strong> Check your network connection and try again</li>
+                <li><strong>Restore subscription:</strong> Tap the restore subscription button in settings</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📝 Feedback</h2>
+            <p>We welcome your valuable feedback to improve Buddha AI. 
+            Please share your feature suggestions, bug reports, and improvement ideas with us.</p>
+            <p><a href="mailto:johyowon99@gmail.com">Send feedback via email</a></p>
+        </div>
+
+        <footer style="text-align: center; margin-top: 40px; padding: 20px; color: #666;">
+            <p>&copy; 2025 johyowon. All rights reserved.</p>
+            <p>Buddha AI - Your Journey to Inner Peace</p>
+        </footer>
+    </div>
+
+    <script>
+        function setLanguage(lang) {
+            // 모든 언어 버튼에서 active 클래스 제거
+            document.querySelectorAll('.language-btn').forEach(btn => btn.classList.remove('active'));
+            
+            // 모든 콘텐츠 숨기기
+            document.getElementById('content-ko').classList.add('hidden');
+            document.getElementById('content-en').classList.add('hidden');
+            
+            // 선택된 언어 표시
+            if (lang === 'ko') {
+                document.getElementById('content-ko').classList.remove('hidden');
+                document.querySelector('.language-btn[onclick="setLanguage(\'ko\')"]').classList.add('active');
+                document.documentElement.lang = 'ko';
+                document.title = 'Buddha AI 지원';
+            } else {
+                document.getElementById('content-en').classList.remove('hidden');
+                document.querySelector('.language-btn[onclick="setLanguage(\'en\')"]').classList.add('active');
+                document.documentElement.lang = 'en';
+                document.title = 'Buddha AI Support';
+            }
+            
+            // 언어 설정 저장
+            localStorage.setItem('buddha-ai-lang', lang);
+        }
+        
+        // 페이지 로드 시 저장된 언어 설정 적용
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('buddha-ai-lang') || 'ko';
+            setLanguage(savedLang);
+        });
+    </script>
+</body>
+</html>
