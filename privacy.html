@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddha AI 개인정보 처리방침</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: rgb(59, 52, 47);
+            background-color: rgb(247, 236, 224);
+        }
+        .language-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .language-btn {
+            background: rgb(232, 145, 142);
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            margin: 0 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        .language-btn.active {
+            background: rgb(93, 64, 55);
+        }
+        .language-btn:hover {
+            background: rgb(141, 110, 99);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            background: linear-gradient(135deg, rgb(174, 198, 207) 0%, rgb(195, 182, 217) 100%);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(59, 52, 47, 0.1);
+        }
+        .section {
+            background: rgb(248, 248, 246);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 12px;
+            border-left: 4px solid rgb(232, 145, 142);
+            box-shadow: 0 4px 16px rgba(93, 64, 55, 0.1);
+        }
+        h2 {
+            color: rgb(93, 64, 55);
+            border-bottom: 2px solid rgb(232, 145, 142);
+            padding-bottom: 8px;
+        }
+        .hidden { display: none; }
+        ul li {
+            margin-bottom: 8px;
+            color: rgb(115, 115, 112);
+        }
+        ul li strong {
+            color: rgb(93, 64, 55);
+        }
+        .highlight {
+            background-color: rgb(245, 204, 176);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 언어 선택 버튼 -->
+    <div class="language-selector">
+        <button class="language-btn active" onclick="setLanguage('ko')">한국어</button>
+        <button class="language-btn" onclick="setLanguage('en')">English</button>
+    </div>
+
+    <!-- 한국어 콘텐츠 -->
+    <div id="content-ko">
+        <div class="header">
+            <h1>🔒 개인정보 처리방침</h1>
+            <p>Buddha AI</p>
+        </div>
+
+        <div class="highlight">
+            <p><strong>시행일자:</strong> 2025년 1월 1일</p>
+            <p><strong>최종 수정일:</strong> 2025년 9월 11일</p>
+        </div>
+
+        <div class="section">
+            <h2>1. 개인정보 수집 및 이용 목적</h2>
+            <p>Buddha AI("회사")는 다음과 같은 목적으로 개인정보를 수집 및 이용합니다:</p>
+            <ul>
+                <li><strong>서비스 제공:</strong> 개인 맞춤형 명상 콘텐츠 추천 및 AI 상담 서비스</li>
+                <li><strong>계정 관리:</strong> 사용자 인증, 계정 생성 및 보안 관리</li>
+                <li><strong>서비스 개선:</strong> 앱 기능 향상, 사용자 경험 개선, 서비스 품질 향상</li>
+                <li><strong>고객 지원:</strong> 문의사항 처리, 기술 지원, 공지사항 전달</li>
+                <li><strong>구독 관리:</strong> 결제 처리, 구독 상태 관리, 환불 처리</li>
+                <li><strong>통계 분석:</strong> 서비스 이용 현황 분석 및 개선 방향 수립</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>2. 수집하는 개인정보 항목</h2>
+            <h3>2.1 필수 수집 정보</h3>
+            <ul>
+                <li><strong>Google 로그인 시:</strong> 이메일 주소, 이름, 프로필 사진</li>
+                <li><strong>앱 사용 기록:</strong> 명상 세션 기록, 진행 상황, 선호도 정보</li>
+                <li><strong>대화 내용:</strong> AI와의 상담 대화 기록 (익명화 처리)</li>
+            </ul>
+            <h3>2.2 자동 수집 정보</h3>
+            <ul>
+                <li><strong>기기 정보:</strong> iOS 버전, 기기 모델, 고유 식별자</li>
+                <li><strong>앱 사용 로그:</strong> 접속 시간, 사용 기능, 오류 로그</li>
+                <li><strong>네트워크 정보:</strong> IP 주소, 접속 지역 (국가 단위)</li>
+            </ul>
+            <h3>2.3 선택 수집 정보</h3>
+            <ul>
+                <li><strong>푸시 알림:</strong> 알림 수신 동의 여부</li>
+                <li><strong>마케팅 정보:</strong> 이벤트 및 프로모션 정보 수신 동의</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3. 개인정보 보유 및 이용 기간</h2>
+            <ul>
+                <li><strong>회원 탈퇴 시:</strong> 즉시 삭제 (단, 법령에 따른 보관 의무 정보 제외)</li>
+                <li><strong>미접속 기간:</strong> 3년간 미접속 시 사전 통지 후 삭제</li>
+                <li><strong>법령에 따른 보관:</strong>
+                    <ul>
+                        <li>계약 또는 청약철회 기록: 5년 (전자상거래법)</li>
+                        <li>대금결제 및 재화공급 기록: 5년 (전자상거래법)</li>
+                        <li>소비자 불만 또는 분쟁처리 기록: 3년 (전자상거래법)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>4. 개인정보의 파기 절차 및 방법</h2>
+            <h3>4.1 파기 절차</h3>
+            <ul>
+                <li>보유기간 만료 또는 개인정보 처리 목적 달성 시 지체없이 파기</li>
+                <li>파기 시 복구 및 재생이 되지 않도록 안전하게 처리</li>
+            </ul>
+            <h3>4.2 파기 방법</h3>
+            <ul>
+                <li><strong>전자적 파일:</strong> 기술적 방법을 사용하여 완전 삭제</li>
+                <li><strong>종이 문서:</strong> 분쇄 또는 소각</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>5. 개인정보의 제3자 제공</h2>
+            <p>회사는 원칙적으로 사용자의 개인정보를 제3자에게 제공하지 않습니다. 다만, 다음의 경우는 예외입니다:</p>
+            <ul>
+                <li>사용자의 명시적 사전 동의가 있는 경우</li>
+                <li>법령의 규정에 의거하거나 수사기관의 요구가 있는 경우</li>
+                <li>서비스 제공을 위해 필요한 경우 (사전 동의 후)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>6. 개인정보 처리 위탁</h2>
+            <p>회사는 서비스 향상을 위해 다음과 같이 개인정보 처리를 위탁하고 있습니다:</p>
+            <ul>
+                <li><strong>Google Firebase:</strong> 데이터 저장, 사용자 인증, 앱 분석</li>
+                <li><strong>Google Analytics:</strong> 앱 사용 통계 분석</li>
+                <li><strong>Apple Inc.:</strong> 구독 및 결제 처리 (App Store)</li>
+            </ul>
+            <p>위탁업체 변경 시 개인정보 처리방침을 통해 공지하겠습니다.</p>
+        </div>
+
+        <div class="section">
+            <h2>7. 정보주체의 권리 및 행사 방법</h2>
+            <p>사용자는 다음과 같은 권리를 가지며, 언제든지 행사할 수 있습니다:</p>
+            <ul>
+                <li><strong>열람권:</strong> 개인정보 처리 현황 확인</li>
+                <li><strong>정정·삭제권:</strong> 개인정보 수정 및 삭제 요구</li>
+                <li><strong>처리정지권:</strong> 개인정보 처리 중단 요구</li>
+                <li><strong>손해배상청구권:</strong> 개인정보 침해로 인한 손해 배상</li>
+            </ul>
+            <div class="highlight">
+                <p><strong>권리 행사 방법:</strong></p>
+                <ul>
+                    <li>이메일: johyowon99@gmail.com</li>
+                    <li>앱 내 설정 메뉴 이용</li>
+                    <li>앱 내 문의 기능 이용</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>8. 아동의 개인정보 보호</h2>
+            <ul>
+                <li>만 14세 미만 아동의 개인정보 처리 시 법정대리인의 동의를 받습니다</li>
+                <li>아동의 개인정보는 더욱 엄격하게 보호되며, 필요 최소한으로만 수집합니다</li>
+                <li>아동 관련 개인정보 처리에 대한 문의는 개인정보보호책임자에게 연락하세요</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>9. 개인정보보호책임자</h2>
+            <ul>
+                <li><strong>개인정보보호책임자:</strong> 조효원</li>
+                <li><strong>이메일:</strong> johyowon99@gmail.com</li>
+                <li><strong>연락처:</strong> 앱 내 문의 기능 이용</li>
+                <li><strong>업무:</strong> 개인정보 처리에 관한 업무 총괄, 개인정보 보호 관련 고충처리</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>10. 개인정보의 안전성 확보 조치</h2>
+            <ul>
+                <li><strong>기술적 조치:</strong>
+                    <ul>
+                        <li>Firebase 보안 시스템을 통한 데이터 암호화</li>
+                        <li>HTTPS 프로토콜을 통한 안전한 데이터 전송</li>
+                        <li>접근 통제 시스템 운영</li>
+                        <li>보안프로그램 설치 및 갱신</li>
+                    </ul>
+                </li>
+                <li><strong>관리적 조치:</strong>
+                    <ul>
+                        <li>개인정보 취급자 최소화 및 교육</li>
+                        <li>정기적인 보안 점검 및 업데이트</li>
+                        <li>개인정보 처리시스템 접근 권한 관리</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>11. 개인정보 침해신고센터</h2>
+            <p>개인정보 침해로 인한 신고나 상담이 필요한 경우 아래 기관에 문의하실 수 있습니다:</p>
+            <ul>
+                <li><strong>개인정보 침해신고센터:</strong> privacy.kisa.or.kr (국번없이 182)</li>
+                <li><strong>개인정보 분쟁조정위원회:</strong> www.kopico.go.kr (국번없이 1833-6972)</li>
+                <li><strong>대검찰청 사이버범죄수사단:</strong> www.spo.go.kr (02-3480-3571)</li>
+                <li><strong>경찰청 사이버안전국:</strong> cyberbureau.police.go.kr (국번없이 182)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>12. 개인정보 처리방침의 변경</h2>
+            <ul>
+                <li>본 개인정보 처리방침은 2025년 9월 11일부터 적용됩니다</li>
+                <li>법령, 정책 또는 보안기술 변경에 따라 내용이 수정될 수 있습니다</li>
+                <li>개정 시 앱 내 공지사항 또는 푸시 알림을 통해 최소 7일 전 공지합니다</li>
+                <li>중요한 변경사항은 30일 전 공지하며, 필요 시 재동의를 받습니다</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 영어 콘텐츠 -->
+    <div id="content-en" class="hidden">
+        <div class="header">
+            <h1>🔒 Privacy Policy</h1>
+            <p>Buddha AI</p>
+        </div>
+
+        <div class="highlight">
+            <p><strong>Effective Date:</strong> January 1, 2025</p>
+            <p><strong>Last Updated:</strong> September 11, 2025</p>
+        </div>
+
+        <div class="section">
+            <h2>1. Purpose of Personal Information Collection</h2>
+            <p>Buddha AI ("Company") collects and uses personal information for the following purposes:</p>
+            <ul>
+                <li><strong>Service Provision:</strong> Personalized meditation content recommendations and AI counseling services</li>
+                <li><strong>Account Management:</strong> User authentication, account creation, and security management</li>
+                <li><strong>Service Improvement:</strong> App functionality enhancement, user experience improvement, service quality enhancement</li>
+                <li><strong>Customer Support:</strong> Inquiry handling, technical support, notification delivery</li>
+                <li><strong>Subscription Management:</strong> Payment processing, subscription status management, refund processing</li>
+                <li><strong>Statistical Analysis:</strong> Service usage analysis and improvement direction establishment</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>2. Personal Information We Collect</h2>
+            <h3>2.1 Required Information</h3>
+            <ul>
+                <li><strong>Google Sign-in:</strong> Email address, name, profile picture</li>
+                <li><strong>App Usage Records:</strong> Meditation session records, progress, preference information</li>
+                <li><strong>Conversation Content:</strong> AI counseling conversation records (anonymized)</li>
+            </ul>
+            <h3>2.2 Automatically Collected Information</h3>
+            <ul>
+                <li><strong>Device Information:</strong> iOS version, device model, unique identifiers</li>
+                <li><strong>App Usage Logs:</strong> Access time, used features, error logs</li>
+                <li><strong>Network Information:</strong> IP address, access region (country level)</li>
+            </ul>
+            <h3>2.3 Optional Information</h3>
+            <ul>
+                <li><strong>Push Notifications:</strong> Notification reception consent</li>
+                <li><strong>Marketing Information:</strong> Event and promotion information reception consent</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3. Data Retention Period</h2>
+            <ul>
+                <li><strong>Account Deletion:</strong> Immediate deletion (except information required by law)</li>
+                <li><strong>Inactive Period:</strong> Deletion after 3 years of inactivity with prior notice</li>
+                <li><strong>Legal Retention:</strong>
+                    <ul>
+                        <li>Contract or withdrawal records: 5 years (E-commerce Act)</li>
+                        <li>Payment and supply records: 5 years (E-commerce Act)</li>
+                        <li>Consumer complaint or dispute records: 3 years (E-commerce Act)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>4. Data Destruction Procedures and Methods</h2>
+            <h3>4.1 Destruction Procedures</h3>
+            <ul>
+                <li>Immediate destruction upon expiration of retention period or achievement of processing purpose</li>
+                <li>Safe processing to prevent recovery and regeneration during destruction</li>
+            </ul>
+            <h3>4.2 Destruction Methods</h3>
+            <ul>
+                <li><strong>Electronic Files:</strong> Complete deletion using technical methods</li>
+                <li><strong>Paper Documents:</strong> Shredding or incineration</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>5. Third-Party Data Sharing</h2>
+            <p>We do not share personal information with third parties, except in the following cases:</p>
+            <ul>
+                <li>With explicit prior consent from users</li>
+                <li>As required by law or requested by investigative agencies</li>
+                <li>When necessary for service provision (after prior consent)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>6. Data Processing Partners</h2>
+            <p>We outsource personal information processing to the following partners for service improvement:</p>
+            <ul>
+                <li><strong>Google Firebase:</strong> Data storage, user authentication, app analytics</li>
+                <li><strong>Google Analytics:</strong> App usage analytics</li>
+                <li><strong>Apple Inc.:</strong> Subscription and payment processing (App Store)</li>
+            </ul>
+            <p>We will notify you through this privacy policy when outsourcing partners change.</p>
+        </div>
+
+        <div class="section">
+            <h2>7. User Rights and Exercise Methods</h2>
+            <p>Users have the following rights and can exercise them at any time:</p>
+            <ul>
+                <li><strong>Right to Access:</strong> Check personal information processing status</li>
+                <li><strong>Right to Rectification/Deletion:</strong> Request correction and deletion of personal information</li>
+                <li><strong>Right to Restrict Processing:</strong> Request suspension of personal information processing</li>
+                <li><strong>Right to Compensation:</strong> Compensation for damages caused by personal information infringement</li>
+            </ul>
+            <div class="highlight">
+                <p><strong>How to Exercise Rights:</strong></p>
+                <ul>
+                    <li>Email: johyowon99@gmail.com</li>
+                    <li>Use in-app settings menu</li>
+                    <li>Use in-app inquiry feature</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>8. Children's Privacy Protection</h2>
+            <ul>
+                <li>We obtain consent from legal guardians when processing personal information of children under 14</li>
+                <li>Children's personal information is more strictly protected and collected only to the minimum extent necessary</li>
+                <li>For inquiries about children's personal information processing, contact our Data Protection Officer</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>9. Data Protection Officer</h2>
+            <ul>
+                <li><strong>Data Protection Officer:</strong> johyowon</li>
+                <li><strong>Email:</strong> johyowon99@gmail.com</li>
+                <li><strong>Contact:</strong> Use in-app inquiry feature</li>
+                <li><strong>Responsibilities:</strong> Overall management of personal information processing, handling privacy-related complaints</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>10. Data Security Measures</h2>
+            <ul>
+                <li><strong>Technical Measures:</strong>
+                    <ul>
+                        <li>Data encryption through Firebase security system</li>
+                        <li>Secure data transmission via HTTPS protocol</li>
+                        <li>Access control system operation</li>
+                        <li>Security program installation and updates</li>
+                    </ul>
+                </li>
+                <li><strong>Administrative Measures:</strong>
+                    <ul>
+                        <li>Minimization and training of personal information handlers</li>
+                        <li>Regular security checks and updates</li>
+                        <li>Personal information processing system access authority management</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>11. Privacy Violation Report Centers</h2>
+            <p>For reports or consultations regarding privacy violations, you can contact the following organizations:</p>
+            <ul>
+                <li><strong>Privacy Violation Report Center:</strong> privacy.kisa.or.kr (Dial 182)</li>
+                <li><strong>Privacy Dispute Mediation Committee:</strong> www.kopico.go.kr (Dial 1833-6972)</li>
+                <li><strong>Supreme Prosecutors' Office Cyber Crime Investigation Unit:</strong> www.spo.go.kr (02-3480-3571)</li>
+                <li><strong>National Police Agency Cyber Safety Bureau:</strong> cyberbureau.police.go.kr (Dial 182)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>12. Privacy Policy Changes</h2>
+            <ul>
+                <li>This privacy policy is effective from September 11, 2025</li>
+                <li>Content may be modified due to changes in laws, policies, or security technologies</li>
+                <li>We will notify you at least 7 days in advance through in-app notices or push notifications when revising</li>
+                <li>Important changes will be notified 30 days in advance, and re-consent will be obtained when necessary</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function setLanguage(lang) {
+            document.querySelectorAll('.language-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('content-ko').classList.add('hidden');
+            document.getElementById('content-en').classList.add('hidden');
+            
+            if (lang === 'ko') {
+                document.getElementById('content-ko').classList.remove('hidden');
+                document.querySelector('.language-btn[onclick="setLanguage(\'ko\')"]').classList.add('active');
+                document.documentElement.lang = 'ko';
+                document.title = 'Buddha AI 개인정보 처리방침';
+            } else {
+                document.getElementById('content-en').classList.remove('hidden');
+                document.querySelector('.language-btn[onclick="setLanguage(\'en\')"]').classList.add('active');
+                document.documentElement.lang = 'en';
+                document.title = 'Buddha AI Privacy Policy';
+            }
+            
+            localStorage.setItem('buddha-ai-privacy-lang', lang);
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('buddha-ai-privacy-lang') || 'ko';
+            setLanguage(savedLang);
+        });
+    </script>
+</body>
+</html>
