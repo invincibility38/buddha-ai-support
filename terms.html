@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddha AI 서비스 이용약관</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: rgb(59, 52, 47);
+            background-color: rgb(247, 236, 224);
+        }
+        .language-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .language-btn {
+            background: rgb(232, 145, 142);
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            margin: 0 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        .language-btn.active {
+            background: rgb(93, 64, 55);
+        }
+        .language-btn:hover {
+            background: rgb(141, 110, 99);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            background: linear-gradient(135deg, rgb(174, 198, 207) 0%, rgb(195, 182, 217) 100%);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(59, 52, 47, 0.1);
+        }
+        .section {
+            background: rgb(248, 248, 246);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 12px;
+            border-left: 4px solid rgb(232, 145, 142);
+            box-shadow: 0 4px 16px rgba(93, 64, 55, 0.1);
+        }
+        h2 {
+            color: rgb(93, 64, 55);
+            border-bottom: 2px solid rgb(232, 145, 142);
+            padding-bottom: 8px;
+        }
+        .hidden { display: none; }
+        ul li {
+            margin-bottom: 8px;
+            color: rgb(115, 115, 112);
+        }
+        ul li strong {
+            color: rgb(93, 64, 55);
+        }
+        .highlight {
+            background-color: rgb(245, 204, 176);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .important-notice {
+            background-color: rgb(232, 145, 142);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .subscription-info {
+            background: linear-gradient(135deg, rgb(174, 200, 163) 0%, rgb(245, 204, 176) 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid rgb(209, 209, 203);
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: rgb(232, 145, 142);
+            color: white;
+            font-weight: bold;
+        }
+        a {
+            color: rgb(232, 145, 142);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            color: rgb(93, 64, 55);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- 언어 선택 버튼 -->
+    <div class="language-selector">
+        <button class="language-btn active" onclick="setLanguage('ko')">한국어</button>
+        <button class="language-btn" onclick="setLanguage('en')">English</button>
+    </div>
+
+    <!-- 한국어 콘텐츠 -->
+    <div id="content-ko">
+        <div class="header">
+            <h1>📋 서비스 이용약관</h1>
+            <p>Buddha AI</p>
+        </div>
+
+        <div class="highlight">
+            <p><strong>시행일자:</strong> 2025년 1월 1일</p>
+            <p><strong>최종 수정일:</strong> 2025년 9월 11일</p>
+            <p><strong>서비스 제공자:</strong> 조효원 (johyowon99@gmail.com)</p>
+        </div>
+
+        <div class="important-notice">
+            <h3>⚠️ 중요 공지</h3>
+            <p>이 약관은 사용자와 Buddha AI 간의 권리, 의무 및 책임사항을 규정합니다. 서비스 이용 전 반드시 숙지하시기 바랍니다.</p>
+        </div>
+
+        <div class="section">
+            <h2>1. 약관의 목적 및 적용</h2>
+            <h3>1.1 목적</h3>
+            <p>본 약관은 조효원("회사")이 제공하는 Buddha AI 모바일 애플리케이션("서비스")의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+            
+            <h3>1.2 약관의 효력 및 변경</h3>
+            <ul>
+                <li>본 약관은 서비스 이용 시점부터 효력이 발생합니다</li>
+                <li>회사는 필요 시 약관을 변경할 수 있으며, 변경된 약관은 앱 내 공지 또는 푸시 알림을 통해 공지합니다</li>
+                <li>중요한 변경사항은 30일 전 사전 고지하며, 변경 후 7일 이내 거부 의사를 표시하지 않으면 동의한 것으로 간주합니다</li>
+                <li>변경된 약관에 동의하지 않을 경우 서비스 이용을 중단하고 탈퇴할 수 있습니다</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>2. 서비스의 제공 및 이용</h2>
+            <h3>2.1 서비스 내용</h3>
+            <ul>
+                <li><strong>AI 명상 가이드:</strong> 개인 맞춤형 명상 콘텐츠 제공</li>
+                <li><strong>AI 상담 서비스:</strong> 마음 건강 관련 대화형 상담</li>
+                <li><strong>명상 기록 관리:</strong> 개인 명상 진행 상황 추적</li>
+                <li><strong>커뮤니티 기능:</strong> 명상 일지 및 경험 공유</li>
+            </ul>
+            
+            <h3>2.2 서비스 이용 조건</h3>
+            <ul>
+                <li>iOS 14.0 이상의 iPhone 기기</li>
+                <li>안정적인 인터넷 연결</li>
+                <li>회사가 정한 이용 정책 준수</li>
+                <li>만 14세 이상 이용자 (만 14세 미만은 법정대리인 동의 필요)</li>
+            </ul>
+
+            <h3>2.3 서비스 제공 시간</h3>
+            <ul>
+                <li>서비스는 연중무휴 24시간 제공됩니다</li>
+                <li>시스템 점검, 업데이트 등으로 인한 일시 중단 가능</li>
+                <li>중단 시 사전 공지 원칙 (긴급한 경우 제외)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3. 회원가입 및 계정 관리</h2>
+            <h3>3.1 회원가입 (선택사항)</h3>
+            <ul>
+                <li><strong>게스트 이용:</strong> 로그인 없이 제한적 기능 이용 가능</li>
+                <li><strong>Google 계정:</strong> Google 로그인을 통한 전체 기능 이용</li>
+                <li><strong>Apple ID:</strong> Apple 로그인을 통한 전체 기능 이용</li>
+                <li>회원가입은 개인에 한하며, 허위 정보 등록 시 서비스 이용이 제한될 수 있습니다</li>
+            </ul>
+
+            <h3>3.2 계정 보안 책임</h3>
+            <ul>
+                <li>계정 정보 관리는 이용자의 책임입니다</li>
+                <li>계정 도용으로 인한 피해는 이용자가 부담합니다</li>
+                <li>계정 이상 징후 발견 시 즉시 회사에 신고해야 합니다</li>
+            </ul>
+
+            <h3>3.3 계정 삭제</h3>
+            <ul>
+                <li>이용자는 언제든지 계정 삭제를 요청할 수 있습니다</li>
+                <li>삭제 방법: 앱 설정 > 계정 관리 > 계정 삭제</li>
+                <li>삭제 시 모든 개인 데이터가 영구 삭제됩니다 (법적 보관 의무 정보 제외)</li>
+            </ul>
+        </div>
+
+        <div class="subscription-info">
+            <h2>4. 구독 서비스 및 결제</h2>
+            <h3>4.1 구독 상품</h3>
+            <table>
+                <tr>
+                    <th>플랜</th>
+                    <th>가격</th>
+                    <th>혜택</th>
+                    <th>갱신 주기</th>
+                </tr>
+                <tr>
+                    <td>무료 플랜</td>
+                    <td>무료</td>
+                    <td>10회 AI 대화</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>프리미엄 플랜</td>
+                    <td>$4.99/월</td>
+                    <td>무제한 AI 대화<br>우선 응답<br>확장 저널</td>
+                    <td>매월 자동 갱신</td>
+                </tr>
+            </table>
+
+            <h3>4.2 자동 갱신 구독</h3>
+            <ul>
+                <li><strong>자동 갱신:</strong> 구독은 매월 자동으로 갱신됩니다</li>
+                <li><strong>갱신 시점:</strong> 현재 구독 기간 만료 24시간 전</li>
+                <li><strong>결제 방법:</strong> Apple App Store를 통한 결제</li>
+                <li><strong>가격 변경:</strong> 구독 가격 변경 시 30일 전 사전 고지</li>
+            </ul>
+
+            <h3>4.3 구독 취소 및 환불</h3>
+            <ul>
+                <li><strong>취소 방법:</strong> iPhone 설정 > Apple ID > 구독 > Buddha AI > 구독 취소</li>
+                <li><strong>취소 시점:</strong> 언제든지 취소 가능 (차기 갱신일부터 적용)</li>
+                <li><strong>환불 정책:</strong> Apple App Store 환불 정책을 따릅니다</li>
+                <li><strong>부분 환불:</strong> 사용하지 않은 구독 기간에 대한 부분 환불은 제공되지 않습니다</li>
+                <li><strong>무료 체험:</strong> 무료 체험 기간 중 취소 시 요금이 청구되지 않습니다</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>5. 이용자의 권리와 의무</h2>
+            <h3>5.1 이용자의 권리</h3>
+            <ul>
+                <li>서비스를 이용약관에 따라 이용할 권리</li>
+                <li>개인정보 처리에 대한 동의 철회 권리</li>
+                <li>서비스 이용 중 발생한 문제에 대한 신고 및 조치 요구 권리</li>
+                <li>약관 변경에 대한 거부 및 탈퇴 권리</li>
+            </ul>
+
+            <h3>5.2 이용자의 의무</h3>
+            <ul>
+                <li><strong>정보 제공:</strong> 회원가입 시 진실된 정보 제공</li>
+                <li><strong>비밀번호 관리:</strong> 계정 정보의 안전한 관리</li>
+                <li><strong>서비스 이용:</strong> 선량한 풍속 및 사회질서에 반하지 않는 방식으로 이용</li>
+                <li><strong>법령 준수:</strong> 관련 법령 및 약관 준수</li>
+            </ul>
+
+            <h3>5.3 금지 행위</h3>
+            <ul>
+                <li>허위 정보 등록 또는 타인 정보 도용</li>
+                <li>서비스의 안정적 운영을 방해하는 행위</li>
+                <li>다른 이용자의 개인정보 수집, 저장, 공개</li>
+                <li>음란, 폭력적, 차별적 내용 게시</li>
+                <li>저작권 등 타인의 권리를 침해하는 행위</li>
+                <li>상업적 목적의 광고 또는 스팸 발송</li>
+                <li>서비스의 소스코드 또는 알고리즘 역공학</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>6. 회사의 권리와 의무</h2>
+            <h3>6.1 회사의 권리</h3>
+            <ul>
+                <li>서비스 제공 방식의 결정 및 변경</li>
+                <li>약관 위반 이용자에 대한 서비스 이용 제한</li>
+                <li>서비스 개선을 위한 기능 추가 또는 변경</li>
+                <li>사업상 중요한 사유로 인한 서비스 종료 (3개월 전 공지)</li>
+            </ul>
+
+            <h3>6.2 회사의 의무</h3>
+            <ul>
+                <li>안정적이고 지속적인 서비스 제공을 위한 최선의 노력</li>
+                <li>이용자 개인정보 보호를 위한 보안 시스템 구축</li>
+                <li>서비스 이용과 관련된 이용자의 의견 수렴 및 처리</li>
+                <li>관련 법령 및 약관에 따른 서비스 제공</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>7. 지적재산권</h2>
+            <h3>7.1 회사의 지적재산권</h3>
+            <ul>
+                <li>서비스 내 모든 콘텐츠의 저작권은 회사에 귀속됩니다</li>
+                <li>서비스명, 로고, 디자인 등의 상표권은 회사가 보유합니다</li>
+                <li>AI 모델, 알고리즘 등의 기술적 권리는 회사가 보유합니다</li>
+            </ul>
+
+            <h3>7.2 이용자 생성 콘텐츠</h3>
+            <ul>
+                <li>이용자가 생성한 명상 일지, 피드백 등의 저작권은 이용자에게 있습니다</li>
+                <li>회사는 서비스 개선 목적으로 익명화된 형태로 활용할 수 있습니다</li>
+                <li>이용자는 자신이 생성한 콘텐츠에 대한 모든 책임을 집니다</li>
+            </ul>
+
+            <h3>7.3 라이선스</h3>
+            <ul>
+                <li>회사는 이용자에게 서비스 이용을 위한 비독점적, 양도불가능한 라이선스를 부여합니다</li>
+                <li>본 라이선스는 약관 위반 또는 서비스 종료 시 자동으로 종료됩니다</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>8. 서비스 이용 제한</h2>
+            <h3>8.1 제한 사유</h3>
+            <ul>
+                <li>약관 위반 행위</li>
+                <li>타인의 권리 침해</li>
+                <li>서비스 운영 방해</li>
+                <li>법령 위반 행위</li>
+            </ul>
+
+            <h3>8.2 제한 절차</h3>
+            <ul>
+                <li><strong>1단계:</strong> 경고 및 시정 요구</li>
+                <li><strong>2단계:</strong> 일시적 이용 정지 (7일 ~ 30일)</li>
+                <li><strong>3단계:</strong> 영구 이용 정지</li>
+                <li>중대한 위반의 경우 단계별 절차 없이 즉시 영구 정지 가능</li>
+            </ul>
+
+            <h3>8.3 이의 제기</h3>
+            <ul>
+                <li>제재에 대한 이의 제기는 이메일(johyowon99@gmail.com)로 가능합니다</li>
+                <li>이의 제기 시 구체적인 사유와 증빙 자료를 제출해야 합니다</li>
+                <li>회사는 이의 제기를 검토 후 7일 이내 결과를 통지합니다</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>9. 면책 조항</h2>
+            <h3>9.1 서비스 이용 관련</h3>
+            <ul>
+                <li>회사는 천재지변, 전쟁, 네트워크 장애 등 불가항력으로 인한 서비스 중단에 대해 책임지지 않습니다</li>
+                <li>이용자의 귀책사유로 인한 서비스 이용 장애에 대해 회사는 책임지지 않습니다</li>
+                <li>무료 서비스의 경우 손해배상 책임을 지지 않습니다</li>
+            </ul>
+
+            <h3>9.2 AI 서비스 관련</h3>
+            <ul>
+                <li>AI가 제공하는 상담 내용은 참고용이며, 전문적인 의료 상담을 대체하지 않습니다</li>
+                <li>AI 응답의 정확성이나 완전성에 대해 보장하지 않습니다</li>
+                <li>AI 서비스 이용으로 인한 의사결정의 결과에 대해 책임지지 않습니다</li>
+            </ul>
+
+            <h3>9.3 제3자 서비스</h3>
+            <ul>
+                <li>Apple App Store, Google 서비스 등 제3자 서비스와 관련된 문제는 해당 업체에 문의해야 합니다</li>
+                <li>외부 링크를 통한 사이트 이용으로 발생하는 문제에 대해 책임지지 않습니다</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>10. 손해배상 및 배상한계</h2>
+            <h3>10.1 손해배상 원칙</h3>
+            <ul>
+                <li>회사의 고의 또는 중대한 과실로 인한 손해에 대해서만 배상 책임을 집니다</li>
+                <li>간접손해, 특별손해, 정신적 피해 등에 대해서는 책임지지 않습니다</li>
+            </ul>
+
+            <h3>10.2 배상 한계</h3>
+            <ul>
+                <li>회사의 손해배상 책임은 이용자가 지불한 이용료를 한도로 합니다</li>
+                <li>무료 서비스 이용자의 경우 손해배상 책임을 지지 않습니다</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>11. 분쟁 해결</h2>
+            <h3>11.1 준거법 및 관할법원</h3>
+            <ul>
+                <li><strong>준거법:</strong> 대한민국 법률</li>
+                <li><strong>관할법원:</strong> 서울중앙지방법원</li>
+                <li>국제적 분쟁의 경우 대한민국 법률을 우선 적용합니다</li>
+            </ul>
+
+            <h3>11.2 분쟁 조정</h3>
+            <ul>
+                <li>분쟁 발생 시 먼저 당사자 간 협의를 통한 해결을 시도합니다</li>
+                <li>협의가 불가능한 경우 소비자분쟁조정위원회 등의 조정을 이용할 수 있습니다</li>
+                <li>조정이 불가능한 경우 법원에 제소할 수 있습니다</li>
+            </ul>
+
+            <h3>11.3 집단 소송 제한</h3>
+            <ul>
+                <li>본 약관과 관련된 분쟁은 개별 소송으로만 제기할 수 있습니다</li>
+                <li>집단소송 또는 대표소송에 참여할 수 없습니다</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>12. 기타 조항</h2>
+            <h3>12.1 약관의 해석</h3>
+            <ul>
+                <li>약관의 일부 조항이 무효가 되어도 나머지 조항은 유효합니다</li>
+                <li>약관에 명시되지 않은 사항은 관련 법령 및 관례에 따릅니다</li>
+            </ul>
+
+            <h3>12.2 통지 방법</h3>
+            <ul>
+                <li>회사가 이용자에게 통지할 때는 앱 내 공지, 푸시 알림, 이메일 등을 이용합니다</li>
+                <li>이용자가 회사에게 통지할 때는 이메일(johyowon99@gmail.com)을 이용합니다</li>
+            </ul>
+
+            <h3>12.3 언어</h3>
+            <ul>
+                <li>본 약관은 한국어로 작성되었으며, 다른 언어 번역본과 차이가 있을 경우 한국어 버전을 우선합니다</li>
+            </ul>
+        </div>
+
+        <div class="highlight">
+            <h3>📞 문의처</h3>
+            <ul>
+                <li><strong>이메일:</strong> <a href="mailto:johyowon99@gmail.com">johyowon99@gmail.com</a></li>
+                <li><strong>지원 페이지:</strong> <a href="https://invincibility38.github.io/buddha-ai-support/">Buddha AI 지원센터</a></li>
+                <li><strong>개인정보 관련:</strong> <a href="https://invincibility38.github.io/buddha-ai-support/privacy.html">개인정보 처리방침</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 영어 콘텐츠 -->
+    <div id="content-en" class="hidden">
+        <div class="header">
+            <h1>📋 Terms of Service</h1>
+            <p>Buddha AI</p>
+        </div>
+
+        <div class="highlight">
+            <p><strong>Effective Date:</strong> January 1, 2025</p>
+            <p><strong>Last Updated:</strong> September 11, 2025</p>
+            <p><strong>Service Provider:</strong> johyowon (johyowon99@gmail.com)</p>
+        </div>
+
+        <div class="important-notice">
+            <h3>⚠️ Important Notice</h3>
+            <p>These terms govern your rights, obligations, and responsibilities with Buddha AI. Please read carefully before using our service.</p>
+        </div>
+
+        <div class="section">
+            <h2>1. Purpose and Application of Terms</h2>
+            <h3>1.1 Purpose</h3>
+            <p>These terms aim to define the rights, obligations, and responsibilities between johyowon ("Company") and users regarding the use of the Buddha AI mobile application ("Service").</p>
+            
+            <h3>1.2 Effectiveness and Changes</h3>
+            <ul>
+                <li>These terms become effective from the time of service use</li>
+                <li>The Company may change the terms when necessary, and changes will be notified through in-app notices or push notifications</li>
+                <li>Important changes will be notified 30 days in advance, and failure to express rejection within 7 days after the change will be considered acceptance</li>
+                <li>If you disagree with the changed terms, you may discontinue service use and withdraw</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>2. Service Provision and Use</h2>
+            <h3>2.1 Service Content</h3>
+            <ul>
+                <li><strong>AI Meditation Guide:</strong> Personalized meditation content provision</li>
+                <li><strong>AI Counseling Service:</strong> Interactive counseling related to mental health</li>
+                <li><strong>Meditation Record Management:</strong> Personal meditation progress tracking</li>
+                <li><strong>Community Features:</strong> Meditation journal and experience sharing</li>
+            </ul>
+            
+            <h3>2.2 Service Use Requirements</h3>
+            <ul>
+                <li>iPhone device with iOS 14.0 or higher</li>
+                <li>Stable internet connection</li>
+                <li>Compliance with company-defined usage policies</li>
+                <li>Users aged 14 or older (parental consent required for under 14)</li>
+            </ul>
+
+            <h3>2.3 Service Hours</h3>
+            <ul>
+                <li>Service is provided 24/7 year-round</li>
+                <li>Temporary suspension possible due to system maintenance, updates, etc.</li>
+                <li>Prior notice principle for suspension (except in emergencies)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3. Account Registration and Management</h2>
+            <h3>3.1 Account Registration (Optional)</h3>
+            <ul>
+                <li><strong>Guest Use:</strong> Limited functionality available without login</li>
+                <li><strong>Google Account:</strong> Full functionality through Google login</li>
+                <li><strong>Apple ID:</strong> Full functionality through Apple login</li>
+                <li>Registration is limited to individuals, and service use may be restricted for false information</li>
+            </ul>
+
+            <h3>3.2 Account Security Responsibility</h3>
+            <ul>
+                <li>Account information management is the user's responsibility</li>
+                <li>Users bear responsibility for damages due to account theft</li>
+                <li>Immediately report any account abnormalities to the company</li>
+            </ul>
+
+            <h3>3.3 Account Deletion</h3>
+            <ul>
+                <li>Users may request account deletion at any time</li>
+                <li>Deletion method: App Settings > Account Management > Delete Account</li>
+                <li>All personal data will be permanently deleted upon deletion (except legally required retention)</li>
+            </ul>
+        </div>
+
+        <div class="subscription-info">
+            <h2>4. Subscription Services and Payment</h2>
+            <h3>4.1 Subscription Plans</h3>
+            <table>
+                <tr>
+                    <th>Plan</th>
+                    <th>Price</th>
+                    <th>Benefits</th>
+                    <th>Renewal Cycle</th>
+                </tr>
+                <tr>
+                    <td>Free Plan</td>
+                    <td>Free</td>
+                    <td>10 AI conversations</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Premium Plan</td>
+                    <td>$4.99/month</td>
+                    <td>Unlimited AI conversations<br>Priority responses<br>Extended journal</td>
+                    <td>Monthly auto-renewal</td>
+                </tr>
+            </table>
+
+            <h3>4.2 Auto-Renewable Subscription</h3>
+            <ul>
+                <li><strong>Auto-renewal:</strong> Subscription automatically renews monthly</li>
+                <li><strong>Renewal timing:</strong> 24 hours before current subscription period expires</li>
+                <li><strong>Payment method:</strong> Payment through Apple App Store</li>
+                <li><strong>Price changes:</strong> 30-day advance notice for subscription price changes</li>
+            </ul>
+
+            <h3>4.3 Subscription Cancellation and Refunds</h3>
+            <ul>
+                <li><strong>Cancellation method:</strong> iPhone Settings > Apple ID > Subscriptions > Buddha AI > Cancel Subscription</li>
+                <li><strong>Cancellation timing:</strong> Can cancel anytime (applies from next renewal date)</li>
+                <li><strong>Refund policy:</strong> Follows Apple App Store refund policy</li>
+                <li><strong>Partial refunds:</strong> No partial refunds for unused subscription periods</li>
+                <li><strong>Free trial:</strong> No charges if cancelled during free trial period</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>5. User Rights and Obligations</h2>
+            <h3>5.1 User Rights</h3>
+            <ul>
+                <li>Right to use service according to terms of service</li>
+                <li>Right to withdraw consent for personal information processing</li>
+                <li>Right to report and request action for service-related issues</li>
+                <li>Right to reject terms changes and withdraw</li>
+            </ul>
+
+            <h3>5.2 User Obligations</h3>
+            <ul>
+                <li><strong>Information provision:</strong> Provide accurate information during registration</li>
+                <li><strong>Password management:</strong> Secure management of account information</li>
+                <li><strong>Service use:</strong> Use in manner that doesn't violate public morals and social order</li>
+                <li><strong>Legal compliance:</strong> Comply with related laws and terms</li>
+            </ul>
+
+            <h3>5.3 Prohibited Activities</h3>
+            <ul>
+                <li>Registering false information or stealing others' information</li>
+                <li>Activities that interfere with stable service operation</li>
+                <li>Collecting, storing, or disclosing other users' personal information</li>
+                <li>Posting obscene, violent, or discriminatory content</li>
+                <li>Activities that infringe others' rights such as copyright</li>
+                <li>Commercial advertising or spam distribution</li>
+                <li>Reverse engineering of service source code or algorithms</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>6. Company Rights and Obligations</h2>
+            <h3>6.1 Company Rights</h3>
+            <ul>
+                <li>Determination and modification of service provision methods</li>
+                <li>Service use restrictions for users violating terms</li>
+                <li>Adding or changing features for service improvement</li>
+                <li>Service termination for important business reasons (3-month advance notice)</li>
+            </ul>
+
+            <h3>6.2 Company Obligations</h3>
+            <ul>
+                <li>Best efforts for stable and continuous service provision</li>
+                <li>Building security systems to protect user personal information</li>
+                <li>Collecting and processing user opinions related to service use</li>
+                <li>Providing service according to related laws and terms</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>7. Intellectual Property Rights</h2>
+            <h3>7.1 Company's Intellectual Property</h3>
+            <ul>
+                <li>Copyright of all content within the service belongs to the company</li>
+                <li>The company holds trademark rights for service names, logos, designs, etc.</li>
+                <li>The company holds technical rights such as AI models and algorithms</li>
+            </ul>
+
+            <h3>7.2 User-Generated Content</h3>
+            <ul>
+                <li>Copyright of meditation journals, feedback, etc. created by users belongs to users</li>
+                <li>The company may use them in anonymized form for service improvement purposes</li>
+                <li>Users bear full responsibility for content they create</li>
+            </ul>
+
+            <h3>7.3 License</h3>
+            <ul>
+                <li>The company grants users a non-exclusive, non-transferable license for service use</li>
+                <li>This license automatically terminates upon terms violation or service termination</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>8. Service Use Restrictions</h2>
+            <h3>8.1 Restriction Reasons</h3>
+            <ul>
+                <li>Terms violation activities</li>
+                <li>Infringement of others' rights</li>
+                <li>Service operation interference</li>
+                <li>Legal violation activities</li>
+            </ul>
+
+            <h3>8.2 Restriction Procedures</h3>
+            <ul>
+                <li><strong>Step 1:</strong> Warning and correction request</li>
+                <li><strong>Step 2:</strong> Temporary use suspension (7-30 days)</li>
+                <li><strong>Step 3:</strong> Permanent use suspension</li>
+                <li>Immediate permanent suspension possible for serious violations without step-by-step procedures</li>
+            </ul>
+
+            <h3>8.3 Appeals</h3>
+            <ul>
+                <li>Appeals against sanctions are possible via email (johyowon99@gmail.com)</li>
+                <li>Must submit specific reasons and supporting evidence when appealing</li>
+                <li>The company will review appeals and notify results within 7 days</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>9. Disclaimer</h2>
+            <h3>9.1 Service Use Related</h3>
+            <ul>
+                <li>The company is not responsible for service interruptions due to force majeure such as natural disasters, wars, network failures</li>
+                <li>The company is not responsible for service use disruptions due to user's fault</li>
+                <li>No liability for damages regarding free services</li>
+            </ul>
+
+            <h3>9.2 AI Service Related</h3>
+            <ul>
+                <li>Counseling content provided by AI is for reference only and does not replace professional medical consultation</li>
+                <li>No guarantee regarding accuracy or completeness of AI responses</li>
+                <li>Not responsible for results of decisions made using AI services</li>
+            </ul>
+
+            <h3>9.3 Third-Party Services</h3>
+            <ul>
+                <li>Issues related to third-party services such as Apple App Store and Google services should be directed to respective companies</li>
+                <li>Not responsible for issues arising from site use through external links</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>10. Damage Compensation and Liability Limits</h2>
+            <h3>10.1 Compensation Principles</h3>
+            <ul>
+                <li>Compensation liability only for damages due to company's intent or gross negligence</li>
+                <li>Not responsible for indirect damages, special damages, mental damages, etc.</li>
+            </ul>
+
+            <h3>10.2 Liability Limits</h3>
+            <ul>
+                <li>Company's damage compensation liability is limited to usage fees paid by users</li>
+                <li>No damage compensation liability for free service users</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>11. Dispute Resolution</h2>
+            <h3>11.1 Governing Law and Jurisdiction</h3>
+            <ul>
+                <li><strong>Governing Law:</strong> Laws of the Republic of Korea</li>
+                <li><strong>Jurisdiction:</strong> Seoul Central District Court</li>
+                <li>Korean law takes priority for international disputes</li>
+            </ul>
+
+            <h3>11.2 Dispute Mediation</h3>
+            <ul>
+                <li>First attempt resolution through consultation between parties when disputes arise</li>
+                <li>If consultation is impossible, mediation such as Consumer Dispute Mediation Committee may be used</li>
+                <li>If mediation is impossible, litigation may be filed in court</li>
+            </ul>
+
+            <h3>11.3 Class Action Restrictions</h3>
+            <ul>
+                <li>Disputes related to these terms may only be filed as individual lawsuits</li>
+                <li>Cannot participate in class actions or representative lawsuits</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>12. Miscellaneous Provisions</h2>
+            <h3>12.1 Terms Interpretation</h3>
+            <ul>
+                <li>Even if some provisions of the terms become invalid, remaining provisions remain valid</li>
+                <li>Matters not specified in the terms follow related laws and customs</li>
+            </ul>
+
+            <h3>12.2 Notification Methods</h3>
+            <ul>
+                <li>When the company notifies users, it uses in-app notices, push notifications, email, etc.</li>
+                <li>When users notify the company, they use email (johyowon99@gmail.com)</li>
+            </ul>
+
+            <h3>12.3 Language</h3>
+            <ul>
+                <li>These terms are written in Korean, and in case of differences with other language translations, the Korean version takes priority</li>
+            </ul>
+        </div>
+
+        <div class="highlight">
+            <h3>📞 Contact Information</h3>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:johyowon99@gmail.com">johyowon99@gmail.com</a></li>
+                <li><strong>Support Page:</strong> <a href="https://invincibility38.github.io/buddha-ai-support/">Buddha AI Support Center</a></li>
+                <li><strong>Privacy Related:</strong> <a href="https://invincibility38.github.io/buddha-ai-support/privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function setLanguage(lang) {
+            document.querySelectorAll('.language-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('content-ko').classList.add('hidden');
+            document.getElementById('content-en').classList.add('hidden');
+            
+            if (lang === 'ko') {
+                document.getElementById('content-ko').classList.remove('hidden');
+                document.querySelector('.language-btn[onclick="setLanguage(\'ko\')"]').classList.add('active');
+                document.documentElement.lang = 'ko';
+                document.title = 'Buddha AI 서비스 이용약관';
+            } else {
+                document.getElementById('content-en').classList.remove('hidden');
+                document.querySelector('.language-btn[onclick="setLanguage(\'en\')"]').classList.add('active');
+                document.documentElement.lang = 'en';
+                document.title = 'Buddha AI Terms of Service';
+            }
+            
+            localStorage.setItem('buddha-ai-terms-lang', lang);
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('buddha-ai-terms-lang') || 'ko';
+            setLanguage(savedLang);
+        });
+    </script>
+</body>
+</html>
